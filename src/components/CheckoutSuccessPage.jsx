@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import alexasFotosImage from '../assets/images/alexas_fotos-pnGjbJEmU3o-unsplash.jpg';
 
-const CheckoutSuccess = () => {
+export const CheckoutSuccess = () => {
   return (
     <div className='checkoutpage'>
       <img src={alexasFotosImage} alt="Alexas Fotos" className="checkout-success-image" />
@@ -13,5 +13,3 @@ const CheckoutSuccess = () => {
     </div>
   );
 };
-
-export default CheckoutSuccess;
