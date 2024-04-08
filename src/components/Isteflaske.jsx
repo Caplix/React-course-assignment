@@ -6,7 +6,7 @@ import Cart from './Cart';
 import { LuShoppingCart } from "react-icons/lu";
 import ProductPage from './Product';
 import { CartProvider } from './CartContext'; 
-import { CheckoutSuccess } from './CheckOutSuccessPage';
+import { CheckoutSuccess } from './CheckoutSuccessPage';
 
 
 const Isteflaske = () => {
