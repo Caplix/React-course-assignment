@@ -5,10 +5,14 @@
 
 }
 
-
-.layout{
-  flex:1;
+body{
+  min-height: 100vh;
+  
 }
+.layout{
+  min-height: inherit;
+}
+
 
 .navBar-ul{
   display: flex;
@@ -31,6 +35,9 @@
   font-size: large;
   text-decoration: underline;
 }
+.cart-body{
+  height: 100vh;
+}
 
 .shopping-cart{
   margin-left: auto;
@@ -39,21 +46,23 @@
   color: white;
 }
 
-.feed-container{
+.feed-container {
   display: grid;
-  grid-template-columns: 25vw 25vw 25vw;
-  grid-template-rows: 30vh 30vh 30vh; 
+  grid-template-columns: repeat(3, 20vw);
+  grid-template-rows: repeat(3, 30vh);
+  justify-content: center; 
+  align-items: center; 
   column-gap: 10px;
-  row-gap: 15px;
-  margin-top: 3vh;
+  row-gap: 8rem;
+  margin-top: 5vh;
   padding: 20px;
-
 }
 
+
 .product-container{
-  width: 25vw;
-  height: 30vh;
-  border: 1px solid black;
+  width: 20vw;
+  height: 40vh;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,34 +70,116 @@
 }
 
 .feed-img{
-  max-width: 20vw;
+  max-width: 15vw;
   max-height: 13vw;
+  margin-bottom: 1rem;
 }
 .centerContent{
+  min-height: 100vh;
   display: flex;
   justify-content: center;
 }
 
 .specificProductContainer{
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   max-width: 40vw;
+  margin-top: 2rem;
   
 
 }
 .specificProductImg{
-  max-width: 40vw;
-  max-height: 50vw;
+  max-width: 20vw;
+  max-height: 30vw;
 }
+
+.contact-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+
+.suggestions-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  background-color: #fff;
+  position: absolute;
+  z-index: 100;
+  width: 40%;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.suggestions-list li {
+  padding: 10px;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}
+
+.suggestions-list li:hover {
+  background-color: #f0f0f0;
+}
+
+
+.checkoutpage{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.checkout-success-image, .contact-us-image {
+  width: 100%; 
+  max-width: 400px; 
+  display: block; 
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  border-radius: 8px; 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
 
 footer {
   background-color: rgb(26, 52, 80);
   color: #fff; 
   width: 100%;
   height: 10rem;
-  margin-top: auto;
-
-
+  bottom: 0;
 }

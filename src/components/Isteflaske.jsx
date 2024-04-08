@@ -6,6 +6,7 @@ import Cart from './Cart';
 import { LuShoppingCart } from "react-icons/lu";
 import ProductPage from './Product';
 import { CartProvider } from './CartContext'; 
+import CheckoutSuccess from './CheckOutSuccessPage';
 
 const Isteflaske = () => {
   
@@ -15,10 +16,11 @@ const Isteflaske = () => {
     <CartProvider>
         <Routes>
           <Route path="/" element={<HomePageFeed />} />
-          <Route path="/products" element={<div>Products</div>} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/product/:productId" element={<ProductPage />} />
+          <Route path="/CheckoutSuccessPage" element={<CheckoutSuccess />} />
+
           <Route path="*" element={<div>Route not found</div>} />
         </Routes>
     </CartProvider>
